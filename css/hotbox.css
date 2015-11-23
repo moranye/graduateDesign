@@ -1,0 +1,232 @@
+.hotbox {
+    width: 836px;
+    height: 242px;
+    border: 1px solid #dedede;
+    background-color: #fff;
+    margin-top: 20px;}
+
+.hotbox-content {
+    margin: 12px 0 0 20px;
+    height: 180px;
+    width: 816px;
+}
+
+.hotbox-content-left {
+    height: 180px;
+    width: 388px;
+    background-color: #fff;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    -webkit-user-select : none;
+    -moz-user-select : none;
+    -ms-user-select : none;
+    user-select : none;
+}
+
+.player-items {
+    height: 180px;
+    display: block;
+    position: absolute;
+    white-space: nowrap;
+    left: 0;
+}
+
+.player-items li {
+    display: inline-block;
+    list-style: none;
+    width: 388px;
+    height: 180px;
+    position: relative;
+}
+
+.player-items li a {
+    display: block;
+}
+
+.player-items li img {
+    width: 100%;
+    height: 100%;
+}
+
+.player-item-topic {
+    padding-left: 7px;
+    font-size: 14px;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    z-index: 1;
+}
+
+.half-opacity-shadow {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    opacity: .6;
+    filter: alpha(opacity=60);
+}
+
+.slidebar-left {
+    position: absolute;
+    top: 57px;
+    left: 10px;
+    width: 26px;
+    height: 44px;
+    background: url(images/left.png) 0 0 no-repeat;
+    cursor: pointer
+}
+
+.slidebar-right {
+    position: absolute;
+    top: 57px;
+    right: 10px;
+    width: 26px;
+    height: 44px;
+    background: url(images/right.png) 0 0 no-repeat;
+    cursor: pointer
+}
+
+.slidebar-dots {
+    position: absolute;
+    height: 30px;
+    right: 0;
+    bottom: 0;
+    line-height: 30px;
+    text-align: right;
+    z-index: 100;
+    -webkit-user-select : none;
+    -moz-user-select : none;
+    -ms-user-select : none;
+    user-select : none;
+
+}
+
+.dot {
+    height: 6px;
+    width: 6px;
+    border-radius: 3px;
+    margin-top: 12px;
+    background-color: #828181;
+    cursor: pointer;
+    overflow: hidden;
+    margin-right: 8px;
+    display: inline-block;
+}
+.dotselected {
+    background: #fff;
+}
+
+.hotbox-content-right {
+    padding-left: 20px;
+    float: left;
+    height: 180px;
+    width: 408px;
+}
+
+.news-items {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: none;
+}
+
+.newItemShow {
+    display: block;
+}
+.news-items li {
+    list-style: none;
+    width: 204px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    overflow: hidden;
+}
+
+.news-img {
+    display: block;
+    float: left;
+    width: 22px;
+    height: 29px;
+    background: url(images/new.png) 0 10px no-repeat;
+    margin-left: 3px;
+}
+
+.news-item-a {
+    padding-left: 16px;
+    background: url(images/dot.png) 0 12px no-repeat;
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    float: left;
+    white-space: nowrap;
+    max-width: 168px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.news-item-a:hover {
+    color: #3285fa;
+}
+
+.hotnews-color-change {
+    color: #f99b39;
+}
+
+.switch_button {
+    height: 28px;
+    line-height: 28px;
+    color: #a5a5a5;
+    width: 80px;
+    text-align: left;
+    display: block;
+    cursor: pointer;
+    float: right;
+    border-top: 2px solid #fff;
+    position: relative;
+    -webkit-user-select : none;
+    -moz-user-select : none;
+    -ms-user-select : none;
+    user-select : none;
+}
+
+.switch_icon {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 20px;
+    height: 16px;
+    background: url(images/change.png) 0 0 no-repeat;
+    display: block;
+}
+.switch_icon:hover{
+    background: url(images/change-hover.png) no-repeat;
+}
+
+.switch_text {
+    position: absolute;
+    left: 26px;
+    top: -1px;
+    width: 50px;
+}
+
+.switch_text:hover {
+    color: #3285fa;
+}
+
+.switch_icon_roll{
+    transition: transform 1s;
+    transform: rotate(720deg);
+    -webkit-transform: rotate(720deg);
+    -moz-transform: rotate(720deg);
+    -o-transform: rotate(720deg);
+    -ms-transform: rotate(720deg);
+}

@@ -1,0 +1,241 @@
+.navigation {
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #e5e7ea;
+}
+
+.website-tab {
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+.tab-usual {
+    height: 28px;
+    line-height: 28px;
+    margin-left: 15px;
+    float: left;
+    font-weight: bold;
+    cursor: pointer;
+    border-top: 2px solid #3285fa;
+    text-decoration: none;
+    color: #000;
+    cursor: text;
+}
+
+.tab-edit {
+    font-size: 12px;
+    top: 4px;
+    right: 20px;
+    color: #A5A5A5;
+    cursor: pointer;
+    position: absolute;
+}
+
+.website-items {
+    width: 796px;
+    padding: 12px 20px 0;
+    margin-bottom: 4px;
+    overflow: hidden;
+}
+
+.website-items li {
+    list-style: none;
+    height: 16px;
+    margin-bottom: 16px;
+    display: block;
+    float: left;
+    width: 132px;
+    overflow: hidden;
+}
+
+.website-items li img {
+    width: 16px;
+    height: 16px;
+    float: left;
+    display: block;
+}
+
+.website-items li a {
+    padding-left: 8px;
+    line-height: 16px;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+    display: block;
+    max-width: 100px;
+    height: 16px;
+    float: left;
+}
+
+.website-items li a:hover {
+    color: #3285fa;
+    text-decoration: none;
+}
+
+.dialog-navigation-edit {
+    width: 836px;
+    height: 300px;
+    background: #fff;
+    z-index: 1000;
+    overflow: hidden;
+    display: none;
+}
+
+.edit-head {
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 0 14px;
+    font-size: 12px;
+}
+
+.edit-head-tips {
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.edit-container {
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+.edit-container li {
+    font-size: 12px;
+    float: left;
+    width: 123px;
+    height: 36px;
+    border: 1px solid #dedede;
+    margin: 0 9px 13px 0;
+    cursor: pointer;
+    list-style-type: none;
+}
+
+.edit-container li:hover {
+    border: 1px solid #3285fa;
+}
+
+.edit-container-item-name {
+    float: left;
+    width: 72px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 9px 0 0 7px;
+}
+
+.edit-container-item-edit {
+    float: left;
+    margin-top: 9px;
+    width: 20px;
+    height: 20px;
+    background: url(images/edit-edit.png) no-repeat;
+}
+
+.edit-container-item-delete {
+    float: left;
+    margin-top: 9px;
+    width: 20px;
+    height: 20px;
+    background: url(images/edit-close.png) no-repeat;
+}
+
+.edit-container-item-addIcon {
+    width: 22px;
+    height: 22px;
+    margin: 7px 0 0 28px;
+    float: left;
+    background: url(images/edit-add.png) no-repeat;
+}
+
+.edit-container-item-addText {
+    width: 30px;
+    height: 20px;
+    line-height: 20px;
+    margin: 9px 0 0 10px;
+    float: left;
+}
+
+.edit-bottom {
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.edit-bottom-title {
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.edit-bottom-input {
+    padding: 19px 0 22px;
+    height: 35px;
+}
+
+.edit-bottom-name-wrapper {
+    width: 201px;
+    height: 100%;
+    border:1px solid #A5A5A5;
+    border-radius: 4px;
+    float: left;
+}
+
+.edit-bottom-address-wrapper {
+    width: 448px;
+    height: 100%;
+    border:1px solid #A5A5A5;
+    border-radius: 4px;
+    float: left;
+    margin-left: 10px;
+}
+
+.edit-bottom-input-name {
+    width: 186px;
+    margin: 9px 7px;
+    outline: none;
+    height: 18px;
+    line-height: 18px;
+    font-size: 14px;
+    border: none;
+}
+
+.edit-bottom-input-save {
+    width: 120px;
+    background: #38f;
+    border: 1px solid #38f;
+    border-radius: 4px;
+    margin-left: 11px;
+    line-height: 34px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    float: left;
+    height: 100%;
+    -webkit-user-select : none;
+    -moz-user-select : none;
+    -ms-user-select : none;
+    user-select : none;
+}
+
+.edit-bottom-input-address {
+    width: 430px;
+    margin: 9px 7px;
+    outline: 0;
+    height: 18px;
+    line-height: 18px;
+    font-size: 14px;
+    border: none;
+}
+
+.edit-container-edit {
+    background: #38f;
+    border-color: #38f;
+    color: #fff;
+}
+
+.edit-container-edit .edit-container-item-edit,.edit-container-edit .edit-container-item-delete,.edit-container-edit .edit-container-item-addIcon {
+    background-position: -20px 0;
+}

@@ -1,0 +1,62 @@
+/*
+ * 
+ * --- box shadow ------------------------------------------------*/
+.box-shadow {
+	position: absolute;
+	z-index: 0;
+	top: -3px;
+	left: -7px;
+}
+
+.box-shadow-top {
+    background: url(images/bg-box-shadow-top-left.png) no-repeat;
+}
+
+.box-shadow-top-right {
+    padding: 0 17px 0 18px;
+    background: url(images/bg-box-shadow-top-right.png) no-repeat right top;
+}
+
+.box-shadow-top-center {
+	padding-top: 14px;
+	background: url(images/bg-box-shadow-top-center.png) repeat-x;
+}
+
+.box-shadow-center {
+    background: url(images/bg-box-shadow-center-left.png) repeat-y;
+}
+
+.box-shadow-center-right {
+    background: url(images/bg-box-shadow-center-right.png) repeat-y right;
+}
+
+.box-shadow-bottom {
+    background: url(images/bg-box-shadow-bottom-left.png) no-repeat;
+}
+
+.box-shadow-bottom-right {
+    padding: 0 17px 0 18px;
+    background: url(images/bg-box-shadow-bottom-right.png) no-repeat right top;
+}
+
+.box-shadow-bottom-center {
+	padding-top: 21px;
+    background: url(images/bg-box-shadow-bottom-center.png) repeat-x;
+}
+
+*html .box-shadow {
+	top: -1px;
+	left: -1px;
+	border: solid 1px #d7d7d7;
+}
+
+*html .box-shadow-top,
+*html .box-shadow-top-right,
+*html .box-shadow-top-center,
+*html .box-shadow-center,
+*html .box-shadow-center-right,
+*html .box-shadow-bottom,
+*html .box-shadow-bottom-right,
+*html .box-shadow-bottom-center {
+	background: none;
+}

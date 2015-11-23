@@ -1,0 +1,78 @@
+.dialog {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+}
+
+.dialog-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 3px;
+    z-index: 1;
+    background: #fff;
+}
+
+.dialog-titlebar {
+    height: 24px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.dialog-titlebar h2 {
+    padding: 6px 15px 0;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.dialog-titlebar-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: none;
+    width: 41px;
+    height: 24px;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    text-indent: -999px;
+    background: url(images/bg-button-dialog-close.png) no-repeat;
+}
+
+.dialog-titlebar-close:hover {
+    background-position: -41px 0;
+}
+
+.dialog-titlebar-close:active {
+    background-position: -82px 0;
+}
+
+.dialog-content {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.dialog-overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: #000;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+
+.dialog .box-shadow {
+    z-index: 0;
+}
