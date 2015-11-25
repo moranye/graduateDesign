@@ -70,16 +70,19 @@
                 move();
             }, timer);
         });
-        dot.on('click', function() {
-            clearTimeout(set);
-            var dotIndex = $(this).index(),
-                leftTo = -containerWidth * dotIndex;
-            $(this).addClass('dotselected').siblings().removeClass('dotselected');
-            $('.player-items').css('left', leftTo);
-            set = setTimeout(function () {
-                move();
-            }, timer);
-        });
+        setTimeout(function(){
+            $('.dot').on('click', function() {
+                clearTimeout(set);
+                var dotIndex = $(this).index(),
+                    leftTo = -containerWidth * dotIndex;
+                $(this).addClass('dotselected').siblings().removeClass('dotselected');
+                $('.player-items').css('left', leftTo);
+                set = setTimeout(function () {
+                    move();
+                }, timer);
+            });
+        },2000);
+
         playerItems.on('mouseover',function(){
            clearTimeout(set)
         });

@@ -1,0 +1,149 @@
+.detailbox {
+    margin-top: 20px;
+    height: 188px;
+    width: 836px;
+    border: 1px solid #dedede;
+    background-color: #fff;
+}
+
+.detailbox-tab {
+    height: 30px;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    display: block;
+}
+
+.detailbox-tab-item {
+    border-top: 2px solid #fff;
+    color: gray;
+    font-size: 12px;
+    height: 28px;
+    line-height: 28px;
+    margin-left: 20px;
+    float: left;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.detailbox-tab .active {
+    border-top: 2px solid #3285fa;
+    color: #333;
+    font-weight: 700;
+}
+
+.detailbox-content {
+    margin: 10px 0 19px 20px;
+    height: 126px;
+    width: 816px;
+}
+
+.detailbox-content-inner {
+    overflow: hidden;
+    height: 126px;
+    display: none;
+}
+
+.detailbox-content-inner-show{
+    display: block;
+}
+
+.detailbox-content-left {
+    width: 184px;
+    height: 126px;
+    margin-right: 20px;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.detailbox-content-left img {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.detailbox-content-title {
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #fff;
+    padding-left: 9px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 175px;
+    z-index: 1
+}
+
+.detailbox-content-shadow {
+    height: 30px;
+    width: 184px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    opacity: .6;
+}
+
+.detailbox-content-right {
+    float: left;
+    width: 612px;
+    height: 126px;
+}
+
+.detailbox-right-title {
+    height: 26px;
+    width: 556px;
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    display: block;
+    text-decoration: none;
+    line-height: 26px;
+    margin-bottom: 8px;
+}
+
+.detailbox-right-title .topline {
+    color: #ff5c5c;
+    float: left;
+}
+
+.detailNewsBox {
+    height: 96px;
+    width: 612px;
+    list-style: none;
+    overflow: hidden;
+}
+
+.detailNewsBox li {
+    list-style: none;
+    width: 286px;
+    overflow: hidden;
+    margin-right: 20px;
+    float: left;
+    height: 32px;
+    line-height: 32px;
+}
+
+.detailNewsBox a {
+    height: 32px;
+    line-height: 32px;
+    color: #333;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+    padding-left: 16px;
+    background: url(images/dot.png) 0 13px no-repeat;
+    display: block;
+    letter-spacing: .5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+.detailbox-content-right a:hover {
+    color: #3285fa;
+}
