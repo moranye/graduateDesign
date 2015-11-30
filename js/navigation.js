@@ -136,7 +136,7 @@
                         editContainerEdit.find('.edit-container-item-name').data('url',address_input);
                         editContainerEdit.find('.edit-container-item-name').html(name_input);
                         webSiteLi.eq(editIndex).find('img').attr('src',getHost(address_input)+'/favicon.ico');
-                        webSiteLi.eq(editIndex).find('a').attr('href',address_input);
+                        webSiteLi.eq(editIndex).find('a').attr('href',getHost(address_input));
                         webSiteLi.eq(editIndex).find('a').html(name_input);
                         $('.edit-container li').removeClass('edit-container-edit');
                         $('.edit-container li:last').addClass('edit-container-edit');

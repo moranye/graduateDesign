@@ -132,11 +132,11 @@
 
             $('.player-items').html(strLi);
             $('.slidebar-dots').html(strDot);
+            events();
         })
 
             Data.getHotboxRightInfo().done(function(data){
-                console.log(data[0].isColor)
-                for(var i = 0;i<50;i++){
+                for(var i = 0;i<data.length;i++){
                     if(i<12){
                         strNews1 = strNews1 + '<li>' +
                             '<a class="news-item-a'+(data[i].isColor==1?' hotnews-color-change':'')+'" href="'+'https://www.baidu.com/s?ie=utf-8&wd='+data[i].title+'" target="_blank">'+data[i].title+'</a>'+(data[i].isnew==1?'<span class="news-img"></span>':'')+'</li>';
@@ -151,7 +151,7 @@
                             '<a class="news-item-a'+(data[i].isColor==1?' hotnews-color-change':'')+'" href="'+'https://www.baidu.com/s?ie=utf-8&wd='+data[i].title+'" target="_blank">'+data[i].title+'</a>'+(data[i].isnew==1?'<span class="news-img"></span>':'')+'</li>';
                     }
 
-                    else if(i>=37 && i<49){
+                    else if(i>=37){
                         strNews4 = strNews4 + '<li>' +
                             '<a class="news-item-a'+(data[i].isColor==1?' hotnews-color-change':'')+'" href="'+'https://www.baidu.com/s?ie=utf-8&wd='+data[i].title+'" target="_blank">'+data[i].title+'</a>'+(data[i].isnew==1?'<span class="news-img"></span>':'')+'</li>';
                     }
@@ -162,7 +162,7 @@
                 $('.news-items:eq(3)').html(strNews4);
             });
 
-        events();
+
     }
     dealData(events);
     init();

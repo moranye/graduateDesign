@@ -92,7 +92,6 @@
 
             })
         };
-
     var getStr = function(item) {
         $.ajax({
             url:item.api,
@@ -101,7 +100,6 @@
         }).done(function(data){
         })
     }
-
     var joinTogether =function(){
         $.each(aApi,function(i,item){
             getStr(item);
@@ -115,7 +113,48 @@
             $('.detailbox-content-inner').eq($(this).index()).addClass('detailbox-content-inner-show').siblings().removeClass('detailbox-content-inner-show');
         })
     }
+    var getTitleBox =function(){
+        Data.getTitleboxContent().done(function(data){
+            var str ='',titleboxContent = $('.titlebox-content');
+            str = str +
+            '<div class="titlebox-content-left">' +
+            '<a class="titlebox-content-left-link" target="_blank" href="'+data.big[0].url+'">' +
+            '<img class="titlebox-content-left-img" src="'+data.big[0].pic+'"> ' +
+            '<div class="titlebox-content-left-shadow"></div> <div class="titlebox-content-left-text">'+data.big[0].title+'</div> ' +
+            '</a>' +
+            ' </div> ' +
+            '<div class="titlebox-content-right"> ' +
+            '<ul class="titlebox-content-right-ul"> ' +
+            '<li class="titlebox-content-right-li">' +
+            ' <a class="titlebox-content-right-link" target="_blank" href="'+data.small[0].url+'"> ' +
+            '<img class="titlebox-content-right-li-img" src="'+data.small[0].pic+'">' +
+            ' <div class="titlebox-content-right-li-shadow"></div> <div class="titlebox-content-right-li-text">'+data.small[0].title+'</div>' +
+            ' </a>' +
+            ' </li> ' +
+            '<li class="titlebox-content-right-li"> ' +
+            '<a class="titlebox-content-right-link" target="_blank" href="'+data.small[1].url+'"> ' +
+            '<img class="titlebox-content-right-li-img" src="'+data.small[1].pic+'"> ' +
+            '<div class="titlebox-content-right-li-shadow"></div> <div class="titlebox-content-right-li-text">'+data.small[1].title+'</div> ' +
+            '</a>' +
+            ' </li>' +
+            ' <li class="titlebox-content-right-li">' +
+            ' <a class="titlebox-content-right-link" target="_blank" href="'+data.small[2].url+'"> ' +
+            '<img class="titlebox-content-right-li-img" src="'+data.small[2].pic+'"> ' +
+            '<div class="titlebox-content-right-li-shadow">' +
+            '</div>' +
+            ' <div class="titlebox-content-right-li-text">'+data.small[2].title+'</div> ' +
+            '</a> ' +
+            '</li>' +
+            ' </ul>' +
+            ' <a class="titlebox-more" data-type="more" target="_blank" href="https://www.baidu.com/s?wd=%E5%8F%91%E7%8E%B0%20%E7%83%AD%E9%97%A8%E8%AF%9D%E9%A2%98">更多热门话题&gt; &gt;</a> ' +
+            '</div>';
+
+            titleboxContent.html(str);
+            console.log(str)
+        })
+    }
 
     joinTogether()
     setEvents()
+    getTitleBox()
 }())
