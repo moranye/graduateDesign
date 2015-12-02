@@ -1,0 +1,12 @@
+.idea/
+.tags
+tests
+.settings/
+.buildpath/
+.project/
+compile/
+__compile__/
+output/
+*.__bak__
+.project
+
