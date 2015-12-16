@@ -150,7 +150,6 @@
             '</div>';
 
             titleboxContent.html(str);
-            console.log(str)
         })
     }
 

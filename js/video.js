@@ -21,7 +21,6 @@
                 jsonp: 'cb',
                 success: function (res) {
                     $b = res.data.slice(0, 8);
-                    console.log("$b");
                     $.each($b, function (i, n) {
                         $("#tv-show").append("<li><span class='tv-show-num'>" + n.id + "</span><a target='_blank' href='" + (url + n.keyword) + "' class='tv-show-link'>" + n.title + "</a><span class='tv-show-read'>" + parseInt((n.searches) / 100) + "万</span></li>");
                     });
@@ -35,7 +34,6 @@
                 jsonp: 'cb',
                 success: function (res) {
                     $b = res.data.slice(0, 8);
-                    console.log("$b");
                     $.each($b, function (i, n) {
                         $("#tv-show1").append("<li><span class='tv-show-num'>" + n.id + "</span><a target='_blank' href='" + (url + n.keyword) + "' class='tv-show-link'>" + n.title + "</a><span class='tv-show-read'>" + parseInt((n.searches) / 100) + "万</span></li>");
                     });
@@ -49,7 +47,6 @@
                 jsonp: 'cb',
                 success: function (res) {
                     $b = res.data.slice(0, 8);
-                    console.log("$b");
                     $.each($b, function (i, n) {
                         $("#tv-show2").append("<li><span class='tv-show-num'>" + n.id + "</span><a target='_blank' href='" + (url + n.keyword) + "' class='tv-show-link'>" + n.title + "</a><span class='tv-show-read'>" + parseInt((n.searches) / 100) + "万</span></li>");
                     });
@@ -63,7 +60,6 @@
                 jsonp: 'cb',
                 success: function (res) {
                     $b = res.data.slice(0, 8);
-                    console.log("$b");
                     $.each($b, function (i, n) {
                         $("#tv-show3").append("<li><span class='tv-show-num'>" + n.id + "</span><a target='_blank' href='" + (url + n.keyword) + "' class='tv-show-link'>" + n.title + "</a><span class='tv-show-read'>" + parseInt((n.searches) / 100) + "万</span></li>");
                     });
@@ -93,5 +89,7 @@
 
 
     }
+    getData();
+    event();
 
 }())

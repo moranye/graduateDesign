@@ -4,7 +4,7 @@
 (function () {
     var containerWidth = 388,
         containerHeight = 180,
-        timer = 3000;
+        timer = 4000;
     var move = function () {
         var outer = $('.player-items'),
             outerWidth = outer.width(),
