@@ -19,9 +19,13 @@
         },
         initIndex: function (i) {
             var that = this;
-            var vote = $('.vote-up-1');
-            if(vote.hasClass('vote-animate')) {
-                vote.removeClass('vote-animate')
+            var voteAnimateUp = $('.vote-up-1'),
+                voteAnimateDown = $('.vote-down-1');
+            if(voteAnimateUp.hasClass('vote-animate')) {
+                voteAnimateUp.removeClass('vote-animate')
+            }
+            if(voteAnimateDown.hasClass('vote-animate')) {
+                voteAnimateDown.removeClass('vote-animate')
             }
             that.content.find('p').animate({opacity: 0}, 200, function () {
                 that.content.find('p').text(jokeLists[i].content);

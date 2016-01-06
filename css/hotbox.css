@@ -207,9 +207,6 @@
     background: url(images/change.png) 0 0 no-repeat;
     display: block;
 }
-.switch_icon:hover{
-    background: url(images/change-hover.png) no-repeat;
-}
 
 .switch_text {
     position: absolute;

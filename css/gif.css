@@ -1,0 +1,235 @@
+#gif {
+    height: 435px;
+    position: relative;
+    padding: 0 20px;
+    border: 1px solid #dedede;
+    margin: 20px 0 20px 0;
+}
+
+.gif-head-img {
+    width: 150px;
+    height: 41px;
+    margin-top: 10px;
+    background: url(images/bg-gif-title-1.png) no-repeat;
+}
+
+.gif-img-inner {
+    width: 500px;
+    height: 288px;
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.gif-img-inner {
+    max-width: 500px;
+    max-height: 288px;
+
+}
+
+.gif-img-wrapper {
+    margin-top: 8px;
+}
+
+.gif-img-desc {
+    font-size: 12px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.gif-buttom {
+    height: 84px;
+    text-align: center;
+    position: relative;
+}
+
+.gif-img-container {
+    width: 396px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.gif-load-img {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    z-index: 2;
+    display: none;
+    background: url(images/gif-loading.png) no-repeat center top;
+    -webkit-animation: round 1s linear 0s infinite normal;
+    -moz-animation: round 1s linear 0s infinite normal;
+    -o-animation: round 1s linear 0s infinite normal;
+    animation: round 1s linear 0s infinite normal;
+}
+
+@-webkit-keyframes round {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes round {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes round {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes round {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.gif-load-download {
+    width: 80px;
+    height: 25px;
+    right: 5px;
+    bottom: 5px;
+    position: absolute;
+    z-index: 3;
+    cursor: pointer;
+    display: none;
+    background: url(images/gif-download.png) no-repeat center top;
+}
+
+.gif-img-container:hover .gif-load-download {
+    display: block;
+}
+
+.button-gif-change {
+    width: 120px;
+    height: 34px;
+    background: url(images/bg-button-fun-next.png) no-repeat;
+}
+
+
+.gif-vote {
+    position: absolute;
+    left: 15px;
+    bottom: 20px;
+}
+
+.gif-button-vote-up {
+    width: 18px;
+    height: 34px;
+    background: url(images/icon-vote-up.png) no-repeat center;
+}
+
+.gif-button-vote-down {
+    width: 17px;
+    height: 26px;
+    background: url(images/icon-vote-down.png) no-repeat center;
+}
+
+.gif-vote-up,.gif-vote-down {
+    cursor: pointer;
+    width: 71px;
+    float: left;
+    position: relative;
+    text-align: left;
+}
+
+.gif-vote-up-count,.gif-vote-down-count {
+    position: absolute;
+    font-size: 12px;
+    left: 30px;
+    top:12px
+}
+.gif-vote-up {
+    color:#ff5b5c;
+}
+
+.gif-vote-down {
+    padding-top: 8px;
+    color:#a5a5a5;
+}
+
+
+.gif-vote-up-1,.gif-vote-down-1 {
+    font-size: 12px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.gif-vote-animate {
+    display: block;
+    animation:myfirst 1s linear 0s 1 forwards;
+    /* Firefox: */
+    -moz-animation:myfirst 1s linear 0s 1 forwards;
+    /* Safari and Chrome: */
+    -webkit-animation:myfirst 1s linear 0s 1 forwards;
+    /* Opera: */
+    -o-animation:myfirst 1s linear 0s 1 forwards;
+}
+
+@keyframes myfirst
+{
+    0%   {opacity: 0;top: 0}
+    30%  {opacity: 1;top: -20px}
+    75%  {opacity: 1;top: -20px}
+    90%  {opacity: 1;top: -20px}
+    100% {opacity: 0;top: 0;display: none}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+    0%   {opacity: 0;top: 0}
+    30%  {opacity: 1;top: -20px}
+    75%  {opacity: 1;top: -20px}
+    90%  {opacity: 1;top: -20px}
+    100% {opacity: 0;top: 0;display: none}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+    0%   {opacity: 0;top: 0}
+    30%  {opacity: 1;top: -20px}
+    75%  {opacity: 1;top: -20px}
+    90%  {opacity: 1;top: -20px}
+    100% {opacity: 0;top: 0;display: none}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+    0%   {opacity: 0;top: 0}
+    30%  {opacity: 1;top: -20px}
+    75%  {opacity: 1;top: -20px}
+    90%  {opacity: 1;top: -20px}
+    100% {opacity: 0;top: 0;display: none}
+}
+
+.gif-bottom-bg {
+    width: 187px;
+    height: 100px;
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+    background: url(images/bg-gif-bottom.png) no-repeat center top;
+}
+
+.gif-image {
+    display: none;
+}

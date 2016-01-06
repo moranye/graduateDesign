@@ -119,7 +119,7 @@
             for (var i=0;i<data.length;i++) {
                 strLi = strLi+
                     '<li>' +
-                    '<a href="'+data[i].web_url+'"><img src="'+data[i].pic+'"></a>' +
+                    '<a target="_blank" href="'+data[i].web_url+'"><img src="'+data[i].pic+'"></a>' +
                     '<div class="player-item-topic">'+data[i].title+'</div>' +
                     '<div class="half-opacity-shadow"></div>' +
                     '</li>';
@@ -139,16 +139,16 @@
                 for(var i = 0;i<data.length;i++){
                     if(i<12){
                         strNews1 = strNews1 + '<li>' +
-                            '<a class="news-item-a'+(data[i].isColor==1?' hotnews-color-change':'')+'" href="'+'https://www.baidu.com/s?ie=utf-8&wd='+data[i].title+'" target="_blank">'+data[i].title+'</a>'+(data[i].isnew==1?'<span class="news-img"></span>':'')+'</li>';
+                            '<a target="_blank" class="news-item-a'+(data[i].isColor==1?' hotnews-color-change':'')+'" href="'+'https://www.baidu.com/s?ie=utf-8&wd='+data[i].title+'" target="_blank">'+data[i].title+'</a>'+(data[i].isnew==1?'<span class="news-img"></span>':'')+'</li>';
                     }
                     else if(i>=12 && i<24){
                         strNews2 = strNews2 + '<li>' +
-                            '<a class="news-item-a'+(data[i].isColor==1?' hotnews-color-change':'')+'" href="'+'https://www.baidu.com/s?ie=utf-8&wd='+data[i].title+'" target="_blank">'+data[i].title+'</a>'+(data[i].isnew==1?'<span class="news-img"></span>':'')+'</li>';
+                            '<a target="_blank" class="news-item-a'+(data[i].isColor==1?' hotnews-color-change':'')+'" href="'+'https://www.baidu.com/s?ie=utf-8&wd='+data[i].title+'" target="_blank">'+data[i].title+'</a>'+(data[i].isnew==1?'<span class="news-img"></span>':'')+'</li>';
                     }
 
                     else if(i>=25 && i<37){
                         strNews3 = strNews3 + '<li>' +
-                            '<a class="news-item-a'+(data[i].isColor==1?' hotnews-color-change':'')+'" href="'+'https://www.baidu.com/s?ie=utf-8&wd='+data[i].title+'" target="_blank">'+data[i].title+'</a>'+(data[i].isnew==1?'<span class="news-img"></span>':'')+'</li>';
+                            '<a target="_blank" class="news-item-a'+(data[i].isColor==1?' hotnews-color-change':'')+'" href="'+'https://www.baidu.com/s?ie=utf-8&wd='+data[i].title+'" target="_blank">'+data[i].title+'</a>'+(data[i].isnew==1?'<span class="news-img"></span>':'')+'</li>';
                     }
 
                     else if(i>=37){
