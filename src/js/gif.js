@@ -113,8 +113,6 @@
                 that.initSections(that.id);
                 that.events();
                 gifImage.show();
-
-                console.log(data)
             });
         },
 

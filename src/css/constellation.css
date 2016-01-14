@@ -1,0 +1,186 @@
+#constellation {
+    padding: 0 20px 10px;
+    margin-top: 20px;
+    font-size: 12px;
+    font-family: Tahoma,Arial,"Microsoft YaHei",Helvetica,Verdana,sans-serif;
+    line-height: 1;
+    border: solid 1px #dedede;
+    box-shadow: 0 1px 0 0 rgba(208,208,208,.22);
+    color: #333;
+    background: #fff;
+}
+
+.constellation-header {
+    height: 42px;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    font-size: 12px;
+}
+
+.constellation-header-items li {
+    padding-top: 10px;
+    margin-right: 20px;
+    float: left;
+}
+
+.constellation-tab-active {
+    padding-top: 8px;
+    border-top: solid 2px #3285fa;
+}
+
+.constellation-header-items a {
+    color: gray;
+}
+
+.constellation-content {
+    height: 197px;
+    padding-top: 5px;
+}
+
+.tabs-panel {
+    display: none;
+    width: 100%;
+    overflow: hidden;
+}
+
+.constellation-icon-wrapper {
+    width: 133px;
+    padding-top: 12px;
+    margin: 0 10px 0 -8px;
+    position: relative;
+    float: left;
+}
+
+.constellation-icon {
+    display: block;
+    width: 133px;
+    height: 110px;
+}
+
+.constellation-info {
+    padding-top: 3px;
+    text-align: center;
+}
+
+.constellation-name {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.constellation-daterange {
+    color: #a5a5a5;
+}
+
+.constellation-detail {
+    width: 660px;
+    float: left;
+}
+
+.constellation-tabs-nav {
+    height: 30px;
+    padding-left: 1px;
+    overflow: hidden;
+}
+
+.constellation-tabs-nav li {
+    width: 96px;
+    height: 100%;
+    margin-left: -1px;
+    position: relative;
+    float: left;
+}
+
+.constellation-tabs-active {
+    z-index: 1;
+}
+
+.constellation-tabs-nav .constellation-tabs-active a {
+    font-weight: 700;
+    color: #fff;
+    background-image: url(images/bg-tabs-constellation-active.png);
+}
+
+.constellation-tabs-nav a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    color: #333;
+    background: url(images/bg-tabs-constellation-default.png) no-repeat;
+}
+
+.constellation-tabs-panel {
+    display: none;
+    padding-top: 19px;
+}
+
+.constellation-fortune {
+    height: 66px;
+    margin-bottom: 22px;
+    position: relative;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 1.57;
+}
+
+.constellation-fortune-values {
+    float: left;
+}
+
+.constellation-fortune-values-type-1 {
+    width: 136px;
+}
+
+.constellation-fortune-values li {
+    height: 14px;
+    padding: 2px 0 0 70px;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.constellation-fortune-values .constellation-fortune-value-label {
+    position: absolute;
+    margin-left: -70px;
+    font-weight: 700;
+}
+
+.constellation-fortune-values-type-2 {
+    width: 410px;
+}
+
+.constellation-fortune-values-type-2 li {
+    width: 135px;
+    float: left;
+}
+
+.constellation-fortune-score-total, .constellation-fortune-score-value {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.constellation-fortune-score-total {
+    background: url(images/icon-star-default.png) repeat-x;
+}
+
+.constellation-fortune-score-value {
+    z-index: 1;
+    background: url(images/icon-star-active.png) repeat-x;
+}
+
+.constellation-fortune-score {
+    width: 80px;
+    height: 16px;
+    top: -2px;
+    position: absolute;
+}
+
+#constellation-aries .constellation-name {
+    color: #FF6B44;
+}
