@@ -22,10 +22,11 @@
     padding-top: 10px;
     margin-right: 20px;
     float: left;
+
 }
 
 .constellation-tab-active {
-    padding-top: 8px;
+    padding-top: 8px !important;
     border-top: solid 2px #3285fa;
 }
 

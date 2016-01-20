@@ -91,13 +91,14 @@ fis.config.merge({
     	],
 
     	'/js/core.js': [
-            'js/constellation.js',
             'js/data.js',
             'js/detailbox.js',
+            'js/mainContent.js',
             'js/fun.js',
             'js/gif.js',
             'js/hotbox.js',
             'js/navigation.js',
+            'js/constellation.js',
             'js/video.js'
     	]},
     deploy: {

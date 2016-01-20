@@ -2,6 +2,7 @@
     width: 100%;
     font-size: 14px;
     border: 1px solid #e5e7ea;
+    position: relative;
 }
 
 .website-tab {
