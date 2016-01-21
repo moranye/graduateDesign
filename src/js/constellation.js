@@ -22,7 +22,6 @@
 
         initStar:function(name){
             Data.getStar().done(function(data){
-                console.log(data);
             })
         },
 

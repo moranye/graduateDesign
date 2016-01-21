@@ -1,3 +1,6 @@
+body {
+    position: relative;
+}
 .container {
     width: 838px;
     margin: 0 auto;
@@ -80,10 +83,15 @@
     height: 25px;
     line-height: 25px;
     cursor: default;
+    padding-left: 8px;
 }
 
 .result-list-item:hover {
     background: #e8e8e8;
+}
+
+.result-list-item-hover{
+    background: #e8e8e8 !important;
 }
 
 .result-list-item a {

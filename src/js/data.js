@@ -109,7 +109,6 @@
                }
            })
                .done(function(res) {
-                   console.log(res.data)
                    defer.resolve(res.data);
                });
 
