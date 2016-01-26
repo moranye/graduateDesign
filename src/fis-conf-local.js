@@ -14,7 +14,7 @@ fis.config.merge({
         }
     },
     roadmap: {
-    	domain: 'http://127.0.0.1:8080/graduateDesign/dist',
+    	domain: 'http://liulanqi.baidu.com:8080/graduateDesign/dist',
         ext: {
             less: 'css'
         },

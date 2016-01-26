@@ -105,11 +105,11 @@
                dataType: 'jsonp',
                jsonp: 'cb',
                data: {
-                   query: '双子座运势'
+                   query: name + '座运势'
                }
            })
                .done(function(res) {
-                   defer.resolve(res.data);
+                   defer.resolve(res.data[0]);
                });
 
            return defer.promise();

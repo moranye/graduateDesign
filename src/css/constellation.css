@@ -22,6 +22,11 @@
     padding-top: 10px;
     margin-right: 20px;
     float: left;
+    -webkit-user-select : none;
+    -moz-user-select : none;
+    -ms-user-select : none;
+    user-select : none;
+
 
 }
 
@@ -184,4 +189,129 @@
 
 #constellation-aries .constellation-name {
     color: #FF6B44;
+}
+
+#constellation-taurus .constellation-name {
+    color: #20D5F5;
+}
+
+#constellation-gemini .constellation-name {
+    color: #FFA824;
+}
+
+#constellation-cancer .constellation-name {
+    color: #E4EDED;
+}
+
+#constellation-leo .constellation-name {
+    color: #FFD300;
+}
+
+#constellation-virgo .constellation-name {
+    color: #91C53E;
+}
+
+#constellation-libra .constellation-name {
+    color: #F064A2;
+}
+
+#constellation-scorpio .constellation-name {
+    color: #BFD73E;
+}
+
+#constellation-sagittarius .constellation-name {
+    color: #8BEA96;
+}
+
+#constellation-capricornus .constellation-name {
+    color: #29A8EE;
+}
+
+#constellation-aquarius .constellation-name {
+    color: #89E9EC;
+}
+
+#constellation-pisces .constellation-name {
+    color: #E8EC76;
+}
+
+.constellation-list {
+    width: 100%;
+    overflow: hidden;
+}
+
+.constellation-list li {
+    width: 71px;
+    height: 52px;
+    padding-left: 52px;
+    margin: 0 9px 10px 0;
+    position: relative;
+    border: solid 1px #d6d6d6;
+    cursor: pointer;
+    float: left;
+    -webkit-user-select : none;
+    -moz-user-select : none;
+    -ms-user-select : none;
+    user-select : none;
+}
+
+.constellation-list .constellation-icon {
+    width: 52px;
+    height: 52px;
+    margin-left: -52px;
+    position: absolute;
+}
+
+.constellation-list .constellation-info {
+    width: 71px;
+    padding-top: 11px;
+}
+
+.constellation-list .constellation-name {
+    margin-bottom: 7px;
+    font-weight: 400;
+}
+
+.constellation-daterange {
+    color: #a5a5a5;
+}
+
+.constellation-list .constellation-selected-icon {
+    display: none;
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    background: url(images/icon-selected.png) no-repeat;
+}
+
+.constellation-state-selected .constellation-selected-icon {
+    display: block;
+}
+
+.constellation-buttonspane {
+    padding-top: 15px;
+    text-align: center;
+}
+
+.constellation-button-save {
+    width: 120px;
+    height: 34px;
+    font-size: 14px;
+    border: solid 1px #a5a5a5;
+    background: #fff;
+    line-height: 34px;
+}
+
+.constellation-button-save:hover {
+    border-color: #3285fa;
+}
+
+.constellation-list .constellation-item-6n {
+    margin-right: 0;
+}
+
+.constellation-list li:hover {
+    border-color: green;
 }
