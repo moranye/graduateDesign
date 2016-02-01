@@ -2,6 +2,13 @@
  * Created by guoshuli on 2015/11/19.
  */
 (function(){
+    var getHost =function(str) {
+        var bool = str.indexOf('http',0);
+        if(bool == -1){
+            str = 'http:\/\/' + str;
+        }
+        return str;
+    };
     var localStorage = window.localStorage;
     var navigation = {
         storageInit : function() {
@@ -11,8 +18,8 @@
             }
             for(var i=0;i<storage.length;i++){
                 storage_str = storage_str+ '<li>' +
-                '<img src="'+storage[i].url+'/favicon.ico'+'">' +
-                '<a href="'+storage[i].url+'" target="_blank">'+storage[i].name+'</a>' +
+                '<img src="'+getHost(storage[i].url)+'/favicon.ico'+'">' +
+                '<a href="'+getHost(storage[i].url)+'" target="_blank">'+storage[i].name+'</a>' +
                 '</li>';
             }
             $('.website-items').html(storage_str);
@@ -67,13 +74,6 @@
                 var editConLi = $('.edit-container li'),
                     del = $('.edit-container-item-delete'),
                     editWebsiteSave = $('#editWebsiteSave');
-                var getHost =function(str) {
-                    var bool = str.indexOf('http',0);
-                    if(bool == -1){
-                        str = 'http:\/\/' + str;
-                    }
-                    return str;
-                };
                 editConLi.on('click',function(){
                     var item = $(this),
                         dataUrl= '',
@@ -117,19 +117,55 @@
                         editContainerEdit = $('.edit-container-edit'),
                         editIndex = editContainerEdit.index(),
                         webSiteLi = $('.website-items li');
+                    if(!name_input || !address_input) {
+                        return ;
+                    }
                     if(editContainerEdit.hasClass('edit-add-trigger')){
-                        openStr =
-                        '<li>' +
+                        openStr =$('<li>' +
                         '<div class="edit-container-item-name" data-url="'+getHost(address_input)+'">'+name_input+'</div>' +
                         '<div class="edit-container-item-edit"></div><div class="edit-container-item-delete"></div>' +
-                        '</li>';
+                        '</li>');
                         outerstr =
                             '<li>' +
                             '<img src="'+getHost(address_input)+'/favicon.ico'+'">' +
                             '<a href="'+address_input+'" target="_blank">'+name_input+'</a>' +
                             '</li>';
+
                         $('.edit-add-trigger').before(openStr);
                         $('.website-items').append(outerstr);
+                        openStr.find('.edit-container-item-delete').on('click',function(){
+                            var parent = $(this).parent(),index = parent.index();
+                            $('.edit-container li').eq(index).remove();
+                            $('.website-items li').eq(index).remove();
+                            if(parent.hasClass('edit-container-edit')){
+                                $('.edit-bottom-input-name').val(''),
+                                    $('.edit-bottom-input-address').val('');
+                            };
+                            $('.edit-add-trigger').addClass('edit-container-edit');
+                        })
+                        openStr.on('click', function () {
+                            var item = $(this),
+                                dataUrl= '',
+                                dataValue = '',
+                                inputName = $('.edit-bottom-input-name'),
+                                inputUrl = $('.edit-bottom-input-address'),
+                                inputSave = $('.edit-bottom-input-save');
+                            var button = item.find('.edit-container-item-name');
+                            item.addClass('edit-container-edit').siblings().removeClass('edit-container-edit');
+
+                            if(item.hasClass('edit-add-trigger')){
+                                inputSave.html('增加');
+                                inputName.val('');
+                                inputUrl.val('');
+                            }
+                            else{
+                                inputSave.html('修改');
+                                dataUrl = button.data('url');
+                                dataValue = button.html();
+                                inputName.val(dataValue);
+                                inputUrl.val(dataUrl);
+                            }
+                        })
 
                     }
                     else{

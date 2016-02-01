@@ -106,3 +106,19 @@ body {
 .bd-search-wrapper-blue {
     border-color: #38f;
 }
+
+.author {
+    margin: 15px 0;
+}
+
+.author-intro a {
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    color: #999;
+    text-decoration: none;
+}
+
+.author-intro a:hover {
+    text-decoration: underline;
+}

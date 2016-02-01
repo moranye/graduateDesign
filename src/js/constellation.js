@@ -238,7 +238,6 @@
                 constellationHeaderItems = $('.constellation-header-items li'),
                 tempObj = [],
                 that = this;
-            console.log(constellation)
             if(!constellation){
 
                 for (var i = 0;i<constellationHeaderItems.length-1;i++) {
