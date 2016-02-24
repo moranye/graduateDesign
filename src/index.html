@@ -5,10 +5,83 @@
     <meta charset="UTF-8">
     <meta name="keywords" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>0 0</title>
+    <title>导航页:-)(-:献给未来的你</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+<div class="toolbar">
+    <div class="setting-button">
+        <span class="setting-button-icon"></span>
+        <span class="setting-button-title">自定义</span>
+    </div>
+</div>
+<div class="section-container" id="section-container">
+    <div class="section-top">
+        <button type="button" class="button section-button-close">
+            <span class="button-close">关闭</span>
+        </button>
+    </div>
+    <div class="section-wrapper">
+        <div class="section-wrapper-head">
+            自定义我的卡片
+        </div>
+        <div class="section-wrapper-inner">
+            <ul class="card-list-items">
+                <li class="card-list-item">
+                    <label>
+                        <input type="checkbox" class="card-list-item-input" id="sel-navigation" data-id="navigation">
+                        <span class="section-wrapper-tips">常用网址</span>
+                    </label>
+                </li>
+                <li class="card-list-item">
+                    <label>
+                        <input type="checkbox" class="card-list-item-input" id="sel-fengyun" data-id="hotbox">
+                        <span class="section-wrapper-tips">今日必看</span>
+                    </label>
+                </li>
+                <li class="card-list-item">
+                    <label>
+                        <input type="checkbox" class="card-list-item-input" id="sel-news" data-id="detailbox">
+                        <span class="section-wrapper-tips">焦点新闻</span>
+                    </label>
+                </li>
+                <li class="card-list-item">
+                    <label>
+                        <input type="checkbox" class="card-list-item-input" id="sel-video" data-id="video">
+                        <span class="section-wrapper-tips">热门视频</span>
+                    </label>
+                </li>
+                <li class="card-list-item">
+                    <label>
+                        <input type="checkbox" class="card-list-item-input" id="sel-topic" data-id="titlebox">
+                        <span class="section-wrapper-tips">话题喷喷喷</span>
+                    </label>
+                </li>
+                <li class="card-list-item card-list-item-l2">
+                    <label>
+                        <input type="checkbox" class="card-list-item-input" id="sel-fun" data-id="fun">
+                        <span class="section-wrapper-tips">搞笑一分钟</span>
+                    </label>
+                </li>
+                <li class="card-list-item card-list-item-l2">
+                    <label>
+                        <input type="checkbox" class="card-list-item-input" id="sel-gif" data-id="gif">
+                        <span class="section-wrapper-tips">搞笑动图</span>
+                    </label>
+                </li>
+                <li class="card-list-item card-list-item-l2">
+                    <label>
+                        <input type="checkbox" class="card-list-item-input" id="sel-constellation" data-id="constellation">
+                        <span class="section-wrapper-tips">星座运势</span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="section-bottom">
+        <button type="button" class="section-bottom-button">保存并关闭</button>
+    </div>
+</div>
 <div class="container">
     <div class="search" id="search">
         <div class="search-inner">
@@ -41,7 +114,7 @@
 
         </div>
     </div>
-    <div class="navigation" id="navigation">
+    <div class="navigation section-card" id="navigation">
         <h2 class="website-tab">
             <div class="tab-usual">常用网址</div>
         </h2>
@@ -89,8 +162,11 @@
                 </li>
             </ul>
         </div>
+        <div class="section-card-handle">
+            <button type="button" class="button section-button-remove" data-id="navigation"></button>
+        </div>
     </div>
-    <div class="hotbox" id="hotbox">
+    <div class="hotbox section-card" id="hotbox">
         <h2 class="website-tab">
             <a href="http://top.baidu.com" target="_blank" class="tab-usual">今日必看</a>
             <span id="fyb" class="switch_button">
@@ -135,8 +211,11 @@
                 </ul>
             </div>
         </div>
+        <div class="section-card-handle">
+            <button type="button" class="button section-button-remove" data-id="hotbox"></button>
+        </div>
     </div>
-    <div class="detailbox">
+    <div class="detailbox section-card" id="detailbox">
         <div class="detailbox-tab">
             <div class="detailbox-tab-item active">娱乐八卦</div>
             <div class="detailbox-tab-item">社会</div>
@@ -181,17 +260,22 @@
                 载入中...
             </div>
         </div>
-
+        <div class="section-card-handle">
+            <button type="button" class="button section-button-remove" data-id="detailbox"></button>
+        </div>
     </div>
-    <div class="titlebox" id="titlebox">
+    <div class="titlebox section-card" id="titlebox">
         <h2 class="website-tab">
             <div class="tab-usual">话题喷喷喷</div>
         </h2>
         <div class="titlebox-content">
             加载中...
         </div>
+        <div class="section-card-handle">
+            <button type="button" class="button section-button-remove" data-id="titlebox"></button>
+        </div>
     </div>
-    <div class="video" id="video">
+    <div class="video section-card" id="video">
         <h2 class="video-header">
             <span class="video-header-text">全网热播</span>
         </h2>
@@ -229,8 +313,11 @@
                 </div>
             </div>
         </div>
+        <div class="section-card-handle">
+            <button type="button" class="button section-button-remove" data-id="video"></button>
+        </div>
     </div>
-    <div class="fun" id="fun">
+    <div class="fun section-card" id="fun">
         <div class="fun-head"></div>
         <div class="fun-content">
             <div class="fun-joke-left">
@@ -260,9 +347,12 @@
                 </div>
             </div>
         </div>
+        <div class="section-card-handle">
+            <button type="button" class="button section-button-remove" data-id="fun"></button>
+        </div>
 
     </div>
-    <div class="gif" id="gif">
+    <div class="gif section-card" id="gif">
         <div class="gif-inner">
             <div class="gif-head">
                 <div class="gif-head-img">
@@ -301,8 +391,11 @@
             </div>
         </div>
         <div class="gif-bottom-bg"></div>
+        <div class="section-card-handle">
+            <button type="button" class="button section-button-remove" data-id="gif"></button>
+        </div>
     </div>
-    <div class="constellation" id="constellation">
+    <div class="constellation section-card" id="constellation">
         <div class="constellation-header">
             <ul class="constellation-header-items">
                     <li data-name="aries" class="constellation-tab-active">
@@ -464,6 +557,9 @@
                     </button>
                 </div>
             </div>
+        </div>
+        <div class="section-card-handle">
+            <button type="button" class="button section-button-remove" data-id="constellation"></button>
         </div>
     </div>
     <div class="author" id="author">
