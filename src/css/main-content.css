@@ -163,6 +163,7 @@ body {
     box-shadow: 1px 2px 5px #ccc;
     z-index: 1000;
     overflow: hidden;
+    display: none;
 }
 
 .section-button-close {
@@ -250,6 +251,7 @@ body {
     border: 1px dashed #959595;
     top: -1px;
     left: -1px;
+    display: none;
 }
 
 .section-button-remove {
