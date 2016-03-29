@@ -39,6 +39,11 @@
     position: relative;
 }
 
+.titlebox-content-left-link img {
+    width: 100%;
+    height: 100%;
+}
+
 .titlebox-content-left-shadow {
     height: 50px;
     position: absolute;

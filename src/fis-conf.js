@@ -14,7 +14,7 @@ fis.config.merge({
         }
     },
     roadmap: {
-        domain: 'http://uisharer.com/graduateDesign',
+        domain: 'http://www.uisharer.com/gd',
         ext: {
             less: 'css'
         },
